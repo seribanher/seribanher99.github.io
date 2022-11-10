@@ -1,0 +1,251 @@
+/* Core Styles */
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+.img1 {
+    padding-top: 20%;
+    padding-left: 43%; 
+    width: 15%;
+    height: auto;
+}
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 330%;
+    line-height: 95%;
+    text-align: center;
+    font-family: "Geneva"; 
+  }
+
+  h2,
+  h3 {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+  }
+  
+  .btn:hover {
+    background: #eaeaea;
+    color: #333;
+  }
+  
+  /* Header Showcase */
+  
+  #showcase {
+    min-height: 900px;
+    color: #fff;
+    text-align: center;
+  }
+
+  
+  #showcase .bg-image {
+    /* The image used */
+    background-image: url("images/gr.jpg");
+
+    /* Set a specific height */
+    height: 900px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  #showcase h1 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  #showcase .content-wrap,
+  #section-a .content-wrap {
+    padding: 0 1.5em;
+  }
+  
+  /* Section A */
+  
+  #section-a {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+  }
+  
+  /* Section B */
+  
+  #section-b {
+    padding: 2em 1em 1em;
+  }
+  
+  #section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #section-b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+  }
+  
+  .card-content {
+    padding: 1.5em;
+  }
+  
+  /* Section C */
+  
+  #section-c {
+    /* The image used */
+    background-image: url("fdo.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(75, 75, 75);
+    padding: 5em;
+  }
+  
+  /* Section D / Boxes */
+  
+  #section-d .box {
+    padding: 2em;
+    color: #fff;
+  }
+  
+  #section-d .box:first-child {
+    background: rgb(85, 85, 85);
+  }
+
+  #section-d .box:last-child {
+    background: rgb(66, 66, 66);
+  }
+
+  /* Section E */
+  
+  #section-e {
+    /* The image used */
+    background-image: url("f4k.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    padding: 5em;
+  }
+
+  /* Section F */
+  
+  #section-f {
+    /* The image used */
+    background-image: url("read.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    padding: 5em;
+  }
+  
+  /* Footer */
+  
+  #main-footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: left;
+  }
+  
+  #main-footer a {
+    color: #2690d4;
+    text-decoration: none;
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 700px) {
+    
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    img {
+      image-resolution: auto;
+    }
+  
+    #section-a .content-text {
+      columns: 2;
+      column-gap: 2em;
+    }
+  
+    #section-a .content-text p {
+      padding-top: 0;
+    }
+  
+    .content-wrap,
+    #section-b ul {
+      grid-column: 2/4;
+    }
+  
+    .box,
+    #main-footer div {
+      grid-column: span 2;
+    }
+  
+    #section-b ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    #section-b li {
+      width: 31%;
+    }
+  }
+
+  
+  
+
+
+  
